@@ -1,0 +1,79 @@
+{
+  "asignatura": "Paradigmas de Programación",
+  "anio": 2024,
+  "preguntas": [
+    {
+      "tipo": "verdadero_falso",
+      "nivel_bloom": "Recordar",
+      "enunciado": "Java es un lenguaje orientado a objetos.",
+      "respuesta_correcta": "V",
+      "tiempo_estimado_seg": 20
+    },
+    {
+      "tipo": "seleccion_multiple",
+      "nivel_bloom": "Entender",
+      "enunciado": "¿Cuál de las siguientes opciones describe mejor la herencia en programación orientada a objetos?",
+      "opciones": [
+        "La creación de múltiples métodos con el mismo nombre",
+        "La reutilización de código mediante clases padre e hija",
+        "El manejo de errores en tiempo de ejecución",
+        "La agrupación de datos relacionados"
+      ],
+      "respuesta_correcta": "La reutilización de código mediante clases padre e hija",
+      "tiempo_estimado_seg": 30
+    },
+    {
+      "tipo": "seleccion_multiple",
+      "nivel_bloom": "Aplicar",
+      "enunciado": "¿Qué instrucción usarías para recorrer una lista de números en Java?",
+      "opciones": [
+        "if",
+        "for",
+        "switch",
+        "return"
+      ],
+      "respuesta_correcta": "for",
+      "tiempo_estimado_seg": 30
+    },
+    {
+      "tipo": "seleccion_multiple",
+      "nivel_bloom": "Analizar",
+      "enunciado": "Dado el siguiente fragmento de código, ¿qué problema presenta?\n\nint[] nums = null;\nSystem.out.println(nums.length);",
+      "opciones": [
+        "Compila sin errores y muestra 0",
+        "Lanza una excepción en tiempo de ejecución",
+        "Imprime 'null'",
+        "El array se inicializa automáticamente"
+      ],
+      "respuesta_correcta": "Lanza una excepción en tiempo de ejecución",
+      "tiempo_estimado_seg": 45
+    },
+    {
+      "tipo": "seleccion_multiple",
+      "nivel_bloom": "Evaluar",
+      "enunciado": "¿Cuál de las siguientes prácticas es más adecuada para mantener el principio de responsabilidad única (SRP)?",
+      "opciones": [
+        "Una clase con múltiples funcionalidades relacionadas",
+        "Una clase por cada función independiente del sistema",
+        "Una clase que controle la interfaz gráfica y el acceso a base de datos",
+        "Una clase que tenga métodos estáticos exclusivamente"
+      ],
+      "respuesta_correcta": "Una clase por cada función independiente del sistema",
+      "tiempo_estimado_seg": 40
+    },
+    {
+      "tipo": "seleccion_multiple",
+      "nivel_bloom": "Crear",
+      "enunciado": "Selecciona la mejor propuesta para diseñar un sistema que permita almacenar y consultar notas de estudiantes:",
+      "opciones": [
+        "Usar archivos de texto plano para guardar todo",
+        "Crear una clase Estudiante con atributos y métodos, y almacenarla en una colección",
+        "Imprimir los datos por consola sin guardarlos",
+        "Usar solo variables globales para mantener los datos en memoria"
+      ],
+      "respuesta_correcta": "Crear una clase Estudiante con atributos y métodos, y almacenarla en una colección",
+      "tiempo_estimado_seg": 45
+    }
+  ]
+}
+
