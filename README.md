@@ -10,8 +10,8 @@ Aplicación Java con Swing que permite administrar una evaluación basada en la 
 - Revisión individual con retroalimentación visual
 
 ##  Estructura del proyecto
-- backend: lógica de negocio (`Item`, `Evaluacion`, `ResultadoEvaluacion`, `CargadorJSON`)
-- frontend: interfaz Swing (`VentanaInicio`, `VentanaPrueba`, `VentanaResumen`, `VentanaRevision`)
+- backend: lógica de negocio (Item, Evaluacion, ResultadoEvaluacion, CargadorJSON)
+- frontend: interfaz Swing (VentanaInicio, VentanaPrueba, VentanaResumen, VentanaRevision)
 - Main.java: inicia la aplicación
 
 ## Instrucciones
