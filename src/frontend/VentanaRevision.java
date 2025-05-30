@@ -15,7 +15,7 @@ public class VentanaRevision extends JFrame {
     private final List<String> respuestasUsuario;
     private int indiceActual = 0;
 
-    // UI
+    
     private JLabel enunciadoLabel;
     private JPanel opcionesPanel;
     private JLabel resultadoLabel;
@@ -47,7 +47,7 @@ public class VentanaRevision extends JFrame {
         resultadoLabel.setFont(new Font("Arial", Font.PLAIN, 13));
         add(resultadoLabel, BorderLayout.SOUTH);
 
-        // Botones
+        
         botonAtras = new JButton("← Atrás");
         botonSiguiente = new JButton("→ Siguiente");
         botonResumen = new JButton("Volver a resumen");
