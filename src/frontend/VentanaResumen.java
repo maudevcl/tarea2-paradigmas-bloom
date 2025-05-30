@@ -25,9 +25,7 @@ public class VentanaResumen extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // =============================
-        // Barra de progreso visual
-        // =============================
+      
         int totalPreguntas = evaluacion.getPreguntas().size();
         int correctas = contarRespuestasCorrectas();
         JProgressBar barra = new JProgressBar(0, totalPreguntas);
@@ -36,9 +34,7 @@ public class VentanaResumen extends JFrame {
         barra.setString("Respuestas correctas: " + correctas + "/" + totalPreguntas);
         add(barra, BorderLayout.NORTH);
 
-        // =============================
-        // Área de texto de resumen
-        // =============================
+       
         JTextArea areaResultados = new JTextArea();
         areaResultados.setEditable(false);
         areaResultados.setFont(new Font("Monospaced", Font.PLAIN, 13));
@@ -74,15 +70,13 @@ public class VentanaResumen extends JFrame {
         JScrollPane scrollPane = new JScrollPane(areaResultados);
         add(scrollPane, BorderLayout.CENTER);
 
-        // =============================
-        // Botón inferior
-        // =============================
+       
         JButton botonRevisar = new JButton("Revisar preguntas una a una");
         add(botonRevisar, BorderLayout.SOUTH);
 
         botonRevisar.addActionListener((ActionEvent e) -> {
             new VentanaRevision(evaluacion, respuestasUsuario);
-            this.dispose(); // cerrar esta ventana
+            this.dispose();
         });
 
         setVisible(true);
