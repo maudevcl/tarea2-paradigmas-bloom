@@ -26,9 +26,9 @@ public class VentanaInicio extends JFrame {
 
         botonCargar = new JButton("Cargar archivo de ítems");
         botonIniciar = new JButton("Iniciar prueba");
-        botonIniciar.setEnabled(false); // Deshabilitado hasta cargar
+        botonIniciar.setEnabled(false); 
 
-        // Panel inferior con botones
+        
         JPanel panelBotones = new JPanel();
         panelBotones.add(botonCargar);
         panelBotones.add(botonIniciar);
@@ -36,7 +36,7 @@ public class VentanaInicio extends JFrame {
         this.add(etiquetaResumen, BorderLayout.CENTER);
         this.add(panelBotones, BorderLayout.SOUTH);
 
-        // Acción del botón cargar
+        
         botonCargar.addActionListener((ActionEvent e) -> {
             JFileChooser selector = new JFileChooser();
             int resultado = selector.showOpenDialog(this);
@@ -60,10 +60,10 @@ public class VentanaInicio extends JFrame {
             }
         });
 
-        // Acción del botón iniciar
+       
         botonIniciar.addActionListener((ActionEvent e) -> {
-            new VentanaPrueba(evaluacionCargada); // Lanza ventana de prueba
-            this.dispose(); // Cierra esta ventana
+            new VentanaPrueba(evaluacionCargada); 
+            this.dispose(); 
         });
 
         this.setVisible(true);
