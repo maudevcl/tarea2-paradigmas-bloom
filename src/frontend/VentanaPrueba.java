@@ -16,7 +16,7 @@ public class VentanaPrueba extends JFrame {
     private int indiceActual = 0;
     private final List<String> respuestasUsuario;
 
-    // Componentes visuales
+    
     private JLabel enunciadoLabel;
     private JPanel opcionesPanel;
     private JButton botonAtras;
@@ -26,7 +26,7 @@ public class VentanaPrueba extends JFrame {
         this.evaluacion = evaluacion;
         this.respuestasUsuario = new ArrayList<>(evaluacion.getPreguntas().size());
         for (int i = 0; i < evaluacion.getPreguntas().size(); i++) {
-            respuestasUsuario.add(null); // Reservar espacio para cada respuesta
+            respuestasUsuario.add(null); 
         }
 
         setTitle("Aplicación de Prueba");
@@ -35,18 +35,18 @@ public class VentanaPrueba extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // Enunciado
+        
         enunciadoLabel = new JLabel();
         enunciadoLabel.setHorizontalAlignment(SwingConstants.CENTER);
         enunciadoLabel.setFont(new Font("Arial", Font.BOLD, 14));
         add(enunciadoLabel, BorderLayout.NORTH);
 
-        // Panel para opciones
+       
         opcionesPanel = new JPanel();
         opcionesPanel.setLayout(new BoxLayout(opcionesPanel, BoxLayout.Y_AXIS));
         add(opcionesPanel, BorderLayout.CENTER);
 
-        // Botones navegación
+    
         botonAtras = new JButton("← Volver atrás");
         botonSiguiente = new JButton("→ Siguiente");
 
@@ -55,7 +55,7 @@ public class VentanaPrueba extends JFrame {
         panelNavegacion.add(botonSiguiente);
         add(panelNavegacion, BorderLayout.SOUTH);
 
-        // Listeners
+       
         botonAtras.addActionListener((ActionEvent e) -> {
             guardarRespuestaSeleccionada();
             indiceActual--;
@@ -133,6 +133,6 @@ public class VentanaPrueba extends JFrame {
                 return;
             }
         }
-        respuestasUsuario.set(indiceActual, null); // sin respuesta
+        respuestasUsuario.set(indiceActual, null); 
     }
 }
