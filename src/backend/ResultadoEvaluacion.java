@@ -29,16 +29,16 @@ public class ResultadoEvaluacion {
             String nivel = pregunta.getNivel_bloom();
             String respuestaUsuario = respuestasUsuario.get(i);
 
-            // Ignorar preguntas no respondidas
+           
             if (respuestaUsuario == null || respuestaUsuario.isBlank()) {
                 continue;
             }
 
-            // Actualizar conteos totales
+            
             totalPorTipo.put(tipo, totalPorTipo.getOrDefault(tipo, 0) + 1);
             totalPorNivel.put(nivel, totalPorNivel.getOrDefault(nivel, 0) + 1);
 
-            // Si la respuesta es correcta, sumar al contador de aciertos
+           
             if (pregunta.getRespuesta_correcta().equalsIgnoreCase(respuestaUsuario)) {
                 correctasPorTipo.put(tipo, correctasPorTipo.getOrDefault(tipo, 0) + 1);
                 correctasPorNivel.put(nivel, correctasPorNivel.getOrDefault(nivel, 0) + 1);
